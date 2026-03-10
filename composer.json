@@ -1,0 +1,41 @@
+{
+    "name": "psc-acme/compiler-product",
+    "description": "Package compiler-product for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\CompilerProduct\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "brick/date-time": "^0.7.1",
+        "symfony/uid": "^7.0",
+        "illuminate/support": "^11.0",
+        "firebase/php-jwt": "^6.0",
+        "psc-acme/api-cart": "^1.0",
+        "psc-acme/handler-cart": "^1.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14",
+        "phpstan/phpstan": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
